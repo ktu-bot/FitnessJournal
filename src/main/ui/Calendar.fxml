@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="592.0" prefWidth="838.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.Controller">
+   <center>
+      <LineChart fx:id="chart" legendSide="TOP" legendVisible="false" prefHeight="646.0" prefWidth="925.0" title="Calories consumed over time" BorderPane.alignment="CENTER">
+        <xAxis>
+          <CategoryAxis prefHeight="50.0" prefWidth="733.0" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+   </center>
+   <top>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Fitness Journal" textAlignment="CENTER" wrappingWidth="255.4921875" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Calibri" size="33.0" />
+         </font></Text>
+   </top>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <bottom>
+      <HBox prefHeight="62.0" prefWidth="798.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="addDay" mnemonicParsing="false" onAction="#addDay" prefHeight="50.0" prefWidth="148.0" text="Add Day">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="17.0" />
+               </font></Button>
+            <Button fx:id="viewCalendar" minWidth="100.0" mnemonicParsing="false" onAction="#viewCalendar" prefHeight="50.0" prefWidth="148.0" text="View Calendar">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="17.0" />
+               </font></Button>
+            <Button fx:id="editCalendar" mnemonicParsing="false" onAction="#editCalendar" prefHeight="50.0" prefWidth="148.0" text="Edit Calendar">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="17.0" />
+               </font></Button>
+            <Button fx:id="saveButton" mnemonicParsing="false" onAction="#saveButton" prefHeight="50.0" prefWidth="148.0" text="Save">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="17.0" />
+               </font></Button>
+            <Button fx:id="resetButton" mnemonicParsing="false" onAction="#resetButton" prefHeight="50.0" prefWidth="148.0" text="Reset">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="17.0" />
+               </font></Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
